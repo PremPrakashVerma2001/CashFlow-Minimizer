@@ -1,0 +1,143 @@
+html,
+body {
+    height: 100vh;
+    background-color: rgba(156, 158, 153, 0.395)
+}
+
+#nav{
+    font-size: 100px;
+    color: rgba(0, 238, 255, 0.681);
+    /* text-align: center; */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-bottom: 5px;
+    display: flex;
+    padding: 20px 10px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;    
+    /* z-index: -1; */
+    background-image: repeating-radial-gradient(rgba(255, 0, 0, 0.42), rgba(65, 241, 65, 0.744) 10%, rgba(238, 235, 235, 0.301) 60%);
+    
+}
+#nav>span{
+    animation: navAnimation 5s ease-in-out 0s infinite alternate ;
+}
+
+@keyframes navAnimation {
+    from {
+        /* transform: scale(1,0.8); */
+        transform: scaleY(1.5) rotateY(0deg);
+
+    }
+    to{
+        /* transform: scale(0.8,1); */
+        transform: scaleY(1) rotateY(360deg);
+    }
+}
+#temptext{
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#mynetwork {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid rgb(231, 103, 103); */
+    /* border-radius: 25%; */
+    background-image: linear-gradient(to top , rgba(228, 158, 158, 0.827) ,white);
+}
+
+#container2 {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid lightgray; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#mynetwork2{
+    /* border: 1px solid rgb(140, 194, 15); */
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgb(191, 228, 158) ,white);
+
+}
+
+#container{
+    /* margin-top: 20px; */
+    /* border: 5px solid black; */
+    margin: 20%;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+
+#generate-graph{
+    margin:auto;
+    display:block;
+    background-color: white;
+    color: rgb(219, 127, 127);
+    
+    border-radius: 12px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   
+}
+
+#generate-graph:hover {background-color: rgba(255, 0, 0, 0.544) ; color : white ; border: 1px solid black;  
+                       }
+
+#generate-graph:active {
+  background-color: red;
+  box-shadow: 0 3px #3b3434;
+  transform: translateY(3.5px);
+  
+}
+
+
+
+
+#solve{
+    margin:auto;
+    display:block;
+    background-color: white;
+    color: rgb(46, 119, 9);
+    /* border: 1px solid green; */
+    border-radius: 12px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    animation: btnAnimation 1s linear infinite alternate;
+}
+
+#solve:hover {background-color: rgba(41, 155, 12, 0.623) ; color : white ; border: 1px solid black;}
+
+#solve:active {
+    background-color: rgb(28, 115, 8);
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+    animation: none;
+    /* transition: all 1s linear; */
+  }
+  
+
+  @keyframes btnAnimation {
+    from {
+        transform: translateX(-1px);
+    }
+    to {
+        transform: translateX(15px);
+    }
+  }
+
+
